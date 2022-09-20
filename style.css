@@ -1,0 +1,143 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(197, 22, 22);
+    text-transform: capitalize;
+}
+
+html{
+    background: rgb(9, 9, 77) ;
+background: radial-gradient(circle, rgb(9, 9, 77) 65%, rgba(72,197,222,1) 98%);
+}
+body{
+    display: flex;
+    flex-direction:column ;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    color: rgb(197, 22, 22);
+    font-size: 55px;
+    text-shadow: 2px 2px 3px cyan;
+}
+p{
+    font-size: 35px;
+    text-shadow: 1px 1px 2px cyan;
+}
+
+.container-datos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container-inputs{
+    margin-top: 15px;
+}
+img{
+    width: 20vw;
+}
+label{
+    color: rgb(197, 22, 22) ; 
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px cyan;
+
+}
+input{
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 0);
+    background-color: rgba(190, 177, 170, 0.267);
+    border: solid rgb(197, 22, 22) ; 
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+
+.box-imagen{
+    border-bottom: solid rgb(197, 22, 22) ; 
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 2cm;
+    text-align: left;
+}
+.btn{
+    background-color: rgba(190, 177, 170, 0.267);
+    border: solid rgb(197, 22, 22) ; 
+    padding: 8px;
+    border-radius: 15px;
+    cursor:pointer;
+    font-size: 20px ;
+}
+
+.btn:active{
+    box-shadow:  0 0px 15px rgb(122, 119, 119);
+    padding: 6px;
+    margin: 2px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+    
+    .box-imagen{
+        width: 100%;
+        text-align: left;
+    }
+    img{
+        width: 30vw;
+    }
+    p{
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+    }
+
+}
+
+/* movimiento carrito */
+.slideOutRight {
+    -webkit-animation-name: slideOutRight;
+    animation-name: slideOutRight;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+
+    @-webkit-keyframes slideOutRight {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    }
+    }
+    @keyframes slideOutRight {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    }
+    } 

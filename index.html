@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MRU</title>
+</head>
+<body>
+    <div class="container-datos">
+        <h1> Movimiento Rectilineo <br> Uniforme </h1>
+        <div class="container-inputs">
+            <label for="velocidad_inicial">velocidad inicial</label><br><input id="velocidad_inicial" type="number" step="0.01" placeholder="0.00">
+        </div>
+        <div class="container-inputs">
+            <label for="tiempo">tiempo</label><br><input id="tiempo" type="number" step="0.01" placeholder="0.00">
+        </div>
+        <div class="container-inputs">
+            <label for="aceleracion">aceleracion</label><br><input id="aceleracion" type="number" step="0.01" placeholder="0.00">
+        </div>
+        <br>
+        <button class="btn" id="btnId" onclick="mruResultado()"> Resultado </button><br>
+        <p>d = Vi. t+1/2. a.t^2</p>
+
+    </div>
+    <div class="box-imagen">
+        <img src="/img/rayo.jpg" class="slideOutRight" alt="" id="carrito" >
+        
+    </div>
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
